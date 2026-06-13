@@ -54,7 +54,7 @@ const skillObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skill-bars').forEach(el => skillObserver.observe(el));
 
 /* ─── CAROUSELS ─── */
-document.querySelectorAll('.proj-carousel').forEach(carousel => {
+document.querySelectorAll('.proj-carousel, .proj-carousel-sm').forEach(carousel => {
   const imgs = carousel.querySelectorAll('img');
   const dots = carousel.querySelectorAll('.carousel-dot');
   if (imgs.length <= 1) return;

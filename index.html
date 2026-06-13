@@ -240,106 +240,183 @@
 
       <div class="projects-grid-s1">
 
+        <!-- SAE 1.0 -->
         <div class="project-card-sm">
-          <div class="proj-sm-header">
-            <span class="proj-num">SAE 1.0</span>
-            <h3>Shield Arduino Nano</h3>
+          <div class="proj-carousel-sm">
+            <img src="images/sae1_shema.jpg" alt="Shield Arduino Nano — schéma" class="active" />
+            <img src="images/sae1_montage1.jpg" alt="Shield Arduino Nano — montage 1" />
+            <img src="images/sae1_montage2.jpg" alt="Shield Arduino Nano — montage 2" />
+            <div class="carousel-dots">
+              <button class="carousel-dot active"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+            </div>
           </div>
-          <p>Conception et réalisation d'un shield Arduino Nano from scratch. Identification des composants (résistances, condensateurs, boutons, LEDs), disposition sur PCB, soudure à l'étain, validation fonctionnelle.</p>
-          <div class="proj-skills">
-            <span class="badge badge-concevoir">Concevoir</span>
-            <span class="badge badge-implanter">Implanter</span>
-          </div>
-          <div class="proj-tools"><span>Soudure</span><span>Arduino</span><span>PCB</span></div>
-          <div class="ac-detail">
-            <span class="ac-code">AC11.02</span>
-            <span class="ac-text">Réaliser un prototype — soudure composants sur circuit imprimé, programmes Arduino en TP</span>
+          <div class="proj-sm-body">
+            <div class="proj-sm-header">
+              <span class="proj-num">SAE 1.0</span>
+              <h3>Shield Arduino Nano</h3>
+            </div>
+            <p>Conception et réalisation d'un shield Arduino Nano from scratch. Identification des composants (résistances, condensateurs, boutons, LEDs), disposition sur PCB, soudure à l'étain, validation fonctionnelle.</p>
+            <div class="proj-skills">
+              <span class="badge badge-concevoir">Concevoir</span>
+              <span class="badge badge-implanter">Implanter</span>
+            </div>
+            <div class="proj-tools"><span>Soudure</span><span>Arduino</span><span>PCB</span></div>
+            <div class="ac-detail">
+              <span class="ac-code">AC11.02</span>
+              <span class="ac-text">Réaliser un prototype — soudure composants sur circuit imprimé, programmes Arduino en TP</span>
+            </div>
           </div>
         </div>
 
+        <!-- SAE 1.01 -->
         <div class="project-card-sm">
-          <div class="proj-sm-header">
-            <span class="proj-num">SAE 1.01</span>
-            <h3>Multimètre numérique</h3>
+          <div class="proj-carousel-sm">
+            <img src="images/sae2_montage.jpg" alt="Multimètre — montage" class="active" />
+            <img src="images/sae2_montage1.jpg" alt="Multimètre — détail 1" />
+            <img src="images/sae2_montage2.jpg" alt="Multimètre — détail 2" />
+            <div class="carousel-dots">
+              <button class="carousel-dot active"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+            </div>
           </div>
-          <p>Conception d'un multimètre fonctionnel (courant, tension, résistance) en 3 jours. Révision tables de vérité, Karnaugh, pont diviseur. Conception PCB sur KiCad, soudure, puis programmation Arduino avec affichage numérique et LEDs indicatrices.</p>
-          <div class="proj-skills">
-            <span class="badge badge-concevoir">Concevoir</span>
-            <span class="badge badge-verifier">Vérifier</span>
-          </div>
-          <div class="proj-tools"><span>KiCad</span><span>Arduino C++</span><span>LCD</span><span>ADC</span></div>
-          <div class="ac-detail">
-            <span class="ac-code">AC11.01</span>
-            <span class="ac-text">Analyse fonctionnelle — découpage en étapes (multiplexage, calibrage)</span>
-          </div>
-          <div class="ac-detail">
-            <span class="ac-code">AC11.02</span>
-            <span class="ac-text">Prototype — soudure + programme Arduino</span>
+          <div class="proj-sm-body">
+            <div class="proj-sm-header">
+              <span class="proj-num">SAE 1.01</span>
+              <h3>Multimètre numérique</h3>
+            </div>
+            <p>Conception d'un multimètre fonctionnel (courant, tension, résistance) en 3 jours. Conception PCB sur KiCad, soudure, puis programmation Arduino avec affichage numérique et LEDs indicatrices.</p>
+            <div class="proj-skills">
+              <span class="badge badge-concevoir">Concevoir</span>
+              <span class="badge badge-verifier">Vérifier</span>
+            </div>
+            <div class="proj-tools"><span>KiCad</span><span>Arduino C++</span><span>LCD</span><span>ADC</span></div>
+            <div class="ac-detail">
+              <span class="ac-code">AC11.01</span>
+              <span class="ac-text">Analyse fonctionnelle — découpage en étapes (multiplexage, calibrage)</span>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-code">AC11.02</span>
+              <span class="ac-text">Prototype — soudure + programme Arduino</span>
+            </div>
           </div>
         </div>
 
+        <!-- SAE 1.02 -->
         <div class="project-card-sm">
-          <div class="proj-sm-header">
-            <span class="proj-num">SAE 1.02</span>
-            <h3>Régulation de température</h3>
+          <div class="proj-carousel-sm">
+            <img src="images/sae3_affiche1.jpg" alt="Régulation température — affiche projet" class="active" />
+            <img src="images/sae3_shema.jpg" alt="Régulation température — schéma fonctionnel" />
+            <div class="carousel-dots">
+              <button class="carousel-dot active"></button>
+              <button class="carousel-dot"></button>
+            </div>
           </div>
-          <p>En binôme, 14 jours pour concevoir un régulateur thermique "tout ou rien" maintenant 67°C dans un bloc aluminium. Chauffage actif entre 62–72°C, LED clignotante 2 Hz (RC=0,7), 3 LEDs d'état. Découverte d'un AOP défectueux lors des tests — diagnostic broche par broche.</p>
-          <div class="proj-skills">
-            <span class="badge badge-concevoir">Concevoir</span>
-            <span class="badge badge-verifier">Vérifier</span>
-          </div>
-          <div class="proj-tools"><span>C embarqué</span><span>NTC</span><span>AOP</span><span>Soudure</span></div>
-          <div class="ac-detail">
-            <span class="ac-code">AC12.01</span>
-            <span class="ac-text">Procédure d'essais — tests de chaque carte sur banc d'essai, tests de continuité</span>
-          </div>
-          <div class="ac-detail">
-            <span class="ac-code">AC12.02</span>
-            <span class="ac-text">Identification dysfonctionnement — AOP défectueux détecté par test de broches</span>
+          <div class="proj-sm-body">
+            <div class="proj-sm-header">
+              <span class="proj-num">SAE 1.02</span>
+              <h3>Régulation de température</h3>
+            </div>
+            <p>En binôme, 14 jours pour concevoir un régulateur thermique "tout ou rien" maintenant 67°C dans un bloc aluminium. Chauffage actif entre 62–72°C, LED clignotante 2 Hz, 3 LEDs d'état. Découverte d'un AOP défectueux lors des tests — diagnostic broche par broche.</p>
+            <div class="proj-skills">
+              <span class="badge badge-concevoir">Concevoir</span>
+              <span class="badge badge-verifier">Vérifier</span>
+            </div>
+            <div class="proj-tools"><span>C embarqué</span><span>NTC</span><span>AOP</span><span>Soudure</span></div>
+            <div class="ac-detail">
+              <span class="ac-code">AC12.01</span>
+              <span class="ac-text">Procédure d'essais — tests de chaque carte sur banc d'essai, tests de continuité</span>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-code">AC12.02</span>
+              <span class="ac-text">Identification dysfonctionnement — AOP défectueux détecté par test de broches</span>
+            </div>
           </div>
         </div>
 
+        <!-- SAE 2.01 -->
         <div class="project-card-sm">
-          <div class="proj-sm-header">
-            <span class="proj-num">SAE 2.01</span>
-            <h3>Robot suiveur de ligne</h3>
+          <div class="proj-carousel-sm">
+            <img src="images/sae4_montage1.jpg" alt="Robot suiveur — montage 1" class="active" />
+            <img src="images/sae4_montage2.jpg" alt="Robot suiveur — montage 2" />
+            <img src="images/sae4_montage3.jpg" alt="Robot suiveur — montage 3" />
+            <img src="images/sae4_rout.jpg" alt="Robot suiveur — routage PCB shield" />
+            <img src="images/sae4_3d1.jpg" alt="Robot suiveur — vue 3D PCB" />
+            <img src="images/sae4_3d2.jpg" alt="Robot suiveur — vue 3D PCB 2" />
+            <div class="carousel-dots">
+              <button class="carousel-dot active"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+            </div>
           </div>
-          <p>En trinôme, robot autonome combinant 3 capteurs : LiDAR VL53L1X I²C (mon rôle — suivi de mur avec correcteur proportionnel), capteur CNY70 (suivi de ligne), boussole MPU-9250. Grafcet implémenté en switch/case, shield PCB vissé sur châssis avec connecteurs Molex.</p>
-          <div class="proj-skills">
-            <span class="badge badge-concevoir">Concevoir</span>
-            <span class="badge badge-verifier">Vérifier</span>
-            <span class="badge badge-implanter">Implanter</span>
-          </div>
-          <div class="proj-tools"><span>C embarqué</span><span>I²C</span><span>LiDAR</span><span>KiCad</span><span>Grafcet</span></div>
-          <div class="ac-detail">
-            <span class="ac-code">AC11.01</span>
-            <span class="ac-text">Analyse fonctionnelle — graphes d'état, découpage mission en étapes</span>
-          </div>
-          <div class="ac-detail">
-            <span class="ac-code">AC12.02</span>
-            <span class="ac-text">Diagnostic — Lidar non fonctionnel si même adresse sur bus I²C → réglage adresses</span>
+          <div class="proj-sm-body">
+            <div class="proj-sm-header">
+              <span class="proj-num">SAE 2.01</span>
+              <h3>Robot suiveur de ligne</h3>
+            </div>
+            <p>En trinôme, robot autonome combinant 3 capteurs : LiDAR VL53L1X I²C (mon rôle — suivi de mur avec correcteur proportionnel), capteur CNY70 (suivi de ligne), boussole MPU-9250. Grafcet en switch/case, shield PCB vissé sur châssis avec connecteurs Molex.</p>
+            <div class="proj-skills">
+              <span class="badge badge-concevoir">Concevoir</span>
+              <span class="badge badge-verifier">Vérifier</span>
+              <span class="badge badge-implanter">Implanter</span>
+            </div>
+            <div class="proj-tools"><span>C embarqué</span><span>I²C</span><span>LiDAR</span><span>KiCad</span><span>Grafcet</span></div>
+            <div class="ac-detail">
+              <span class="ac-code">AC11.01</span>
+              <span class="ac-text">Analyse fonctionnelle — graphes d'état, découpage mission en étapes</span>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-code">AC12.02</span>
+              <span class="ac-text">Diagnostic — Lidar non fonctionnel si même adresse sur bus I²C → réglage adresses</span>
+            </div>
           </div>
         </div>
 
+        <!-- SAE 2.02 -->
         <div class="project-card-sm">
-          <div class="proj-sm-header">
-            <span class="proj-num">SAE 2.02</span>
-            <h3>Automatisme + Énergie</h3>
+          <div class="proj-carousel-sm">
+            <img src="images/sae5_energie1.jpg" alt="Automatisme + Énergie — armoire électrique 1" class="active" />
+            <img src="images/sae5_energie2.jpg" alt="Automatisme + Énergie — armoire électrique 2" />
+            <img src="images/sae5_energie3.jpg" alt="Automatisme + Énergie — armoire électrique 3" />
+            <img src="images/sae5_energie4.jpg" alt="Automatisme + Énergie — câblage" />
+            <img src="images/sae5_automatisme.jpg" alt="Automatisme — maquette station" />
+            <img src="images/sae5_automatisme2.jpg" alt="Automatisme — grafcet" />
+            <img src="images/sae5_automatisme3.jpg" alt="Automatisme — UnityPro" />
+            <div class="carousel-dots">
+              <button class="carousel-dot active"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+            </div>
           </div>
-          <p>2 semaines en binôme. Énergie : câblage armoire électrique, VAT, consignations, connexion à une partie opérative (vérins pneumatiques, capteurs, plateau tournant). Automatisme : station de traitement avec four, programmation Grafcet sur UnityPro, niveau de difficulté croissant.</p>
-          <div class="proj-skills">
-            <span class="badge badge-concevoir">Concevoir</span>
-            <span class="badge badge-verifier">Vérifier</span>
-            <span class="badge badge-implanter">Implanter</span>
-          </div>
-          <div class="proj-tools"><span>Grafcet</span><span>UnityPro</span><span>Schemaplic</span><span>Armoire électrique</span></div>
-          <div class="ac-detail">
-            <span class="ac-code">AC11.03</span>
-            <span class="ac-text">Dossier de fabrication — rempli au fur et à mesure des tests pour présenter l'armoire au client</span>
-          </div>
-          <div class="ac-detail">
-            <span class="ac-code">AC12.01</span>
-            <span class="ac-text">Tests de continuité / VAT / consignation, tests maquette</span>
+          <div class="proj-sm-body">
+            <div class="proj-sm-header">
+              <span class="proj-num">SAE 2.02</span>
+              <h3>Automatisme + Énergie</h3>
+            </div>
+            <p>2 semaines en binôme. Énergie : câblage armoire électrique, VAT, consignations, connexion à une partie opérative (vérins pneumatiques, capteurs, plateau tournant). Automatisme : station de traitement avec four, programmation Grafcet sur UnityPro.</p>
+            <div class="proj-skills">
+              <span class="badge badge-concevoir">Concevoir</span>
+              <span class="badge badge-verifier">Vérifier</span>
+              <span class="badge badge-implanter">Implanter</span>
+            </div>
+            <div class="proj-tools"><span>Grafcet</span><span>UnityPro</span><span>Schemaplic</span><span>Armoire électrique</span></div>
+            <div class="ac-detail">
+              <span class="ac-code">AC11.03</span>
+              <span class="ac-text">Dossier de fabrication — rempli au fur et à mesure des tests pour présenter l'armoire au client</span>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-code">AC12.01</span>
+              <span class="ac-text">Tests de continuité / VAT / consignation, tests maquette</span>
+            </div>
           </div>
         </div>
 

@@ -1248,3 +1248,58 @@ code {
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(0,212,255,0.3);
 }
+
+/* ─── Carousel petites cartes (SAE année 1) ─── */
+.proj-carousel-sm {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: #0d1117;
+  flex-shrink: 0;
+}
+.proj-carousel-sm img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.proj-carousel-sm img.active { opacity: 1; }
+.proj-carousel-sm .carousel-dots {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 2;
+}
+
+/* ─── Carte avec carousel : layout flex colonne ─── */
+.project-card-sm {
+  display: flex;
+  flex-direction: column;
+  padding: 0;              /* reset padding — on le met dans le body */
+}
+.proj-sm-body {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+.proj-sm-body .proj-sm-header { margin-bottom: 0.25rem; }
+.proj-sm-body p { margin-bottom: 0; }
+
+/* ─── Grille année 1 : passe de 3 colonnes à 2 pour laisser de la place ─── */
+.projects-grid-s1 {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1.5rem;
+}
+@media (max-width: 700px) {
+  .projects-grid-s1 { grid-template-columns: 1fr !important; }
+}
